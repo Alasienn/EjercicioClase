@@ -9,10 +9,12 @@ package ejercicioentrega;
 public class Account {
     private int id;
     private double credit;
+    private Client owner;
 
-    public Account(int id, double credit) {
+    public Account(int id, double credit, Client owner) {
         this.id = id;
         this.credit = credit;
+        this.owner=owner;
     }
 
     public int getId() {

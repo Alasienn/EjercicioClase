@@ -5,15 +5,28 @@
  */
 package ejercicioentrega;
 
+import java.util.ArrayList;
+
 public class Client extends Person {
     
     private Manager manager;
+    private ArrayList<Account> accounts;
 
     public Client(String name) {
         super(name);
         this.manager=manager;
+        this.accounts = new ArrayList<>();
     }
     
+    
+    //Nueva Cuenta
+    public boolean addAccount(int id, double credit, Client dueno){
+        Account account = new Account(0, 0, dueno);
+        if(this.accounts.add(account))
+            return true;
+        else
+            return false;
+    }
     
     
 }
