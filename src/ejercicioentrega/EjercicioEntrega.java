@@ -5,13 +5,17 @@
  */
 package ejercicioentrega;
 
+import java.util.Scanner;
+
 public class EjercicioEntrega {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        String nombanc = sc.next();
+        Bank b = new Bank(nombanc);
     }
     
 }
