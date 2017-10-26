@@ -64,6 +64,6 @@ public class Bank {
 
     @Override
     public String toString() {
-        return ".:Banco " + name + ";." + "\n" + "Cantidad de cuentas existentes:" + accounts + "\n" + ", Managers:" + managers.size() + "\n" + "Clients=" + clients.size();
+        return ".:Banco " + name + ":." + "\n" + "Cantidad de cuentas existentes:" + accounts + "\n" + "Managers:" + managers.size() + "\n" + "Clients=" + clients.size();
     }
 }
