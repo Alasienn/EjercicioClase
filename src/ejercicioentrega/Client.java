@@ -17,12 +17,21 @@ public class Client extends Person {
         this.manager = manager;
         this.accounts = new ArrayList<>();
     }
-
+   
     //Nueva Cuenta
-    public boolean addAccount(int id, double credit, Client dueno) {
-        Account account = new Account(0, 0, dueno);
-        return this.accounts.add(account);
-
+    public boolean addAccount(int id, double credit, Client dueno){
+        Account account = new Account(0, 0.0 , null);
+        if(this.accounts.add(account))
+            return true;
+        else
+            return false;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente:    " + super.toString() + "|| Manager=" + manager + "|| Cuentas=" + accounts.size() ;
+    }
+    
+    
+    
 }
