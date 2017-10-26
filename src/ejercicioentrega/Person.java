@@ -5,7 +5,11 @@
  */
 package ejercicioentrega;
 
-public class Person {
+/**
+ *
+ * @author crist
+ */
+abstract public class Person {
     private String name;
 
     public Person(String name) {

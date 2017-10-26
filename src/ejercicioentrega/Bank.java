@@ -8,6 +8,7 @@ package ejercicioentrega;
 import java.util.ArrayList;
 
 public class Bank {
+
     private String name;
     private ArrayList<Account> accounts;
     private ArrayList<Manager> managers;
@@ -22,29 +23,27 @@ public class Bank {
 
     public String getName() {
         return name;
-        
+
     }
 
     public void setName(String name) {
         this.name = name;
     }
-    
+
     //Nueva Cuenta
-    public boolean addAccount(int id, double credit, Client dueno){
+    public boolean addAccount(int id, double credit, Client dueno) {
         Account account = new Account(0, 0, dueno);
-        if(this.accounts.add(account))
-            return true;
-        else
-            return false;
+        return this.accounts.add(account);
     }
-    
+
     //Genera Manager
-    public boolean newManager(String name){
+    public boolean newManager(String name) {
         Manager manager = new Manager(name);
-        if(this.managers.add(manager))
+        if (this.managers.add(manager)) {
             return true;
-        else
+        } else {
             return false;
+        }
     }
-    
+
 }
