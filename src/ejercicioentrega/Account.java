@@ -32,6 +32,11 @@ public class Account {
     public void setCredit(double credit) {
         this.credit = credit;
     }
+
+    @Override
+    public String toString() {
+        return ".:Cuenta:.  " + "ID: " + id + ", Credito: " + credit + ", Propietario: " + owner + '}';
+    }
     
     
 

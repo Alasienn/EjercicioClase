@@ -24,5 +24,11 @@ public class Manager extends Person {
         else
             return false;
     }
+
+    @Override
+    public String toString() {
+        return "Manager: " + super.toString() + "|| Clientes=" + clients.size();
+    }
+    
     
 }
